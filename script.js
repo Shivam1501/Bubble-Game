@@ -21,7 +21,7 @@ if(mediaQuery.matches){
     function makeBubbles(){
         var template = ``;
     
-        for(var i=1; i<=40; i++){
+        for(var i=1; i<=50; i++){
             template += `<div id="bubble">${Math.floor(Math.random()*10)}</div>`;
             bottomcont.innerHTML = template;
         }
