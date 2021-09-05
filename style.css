@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Product Sans";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: goldenrod;
+}
+#main>h1{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    color: #fff;
+    font-family: "Great Vibes";
+    font-size: 45px;
+    font-weight: 900;
+}
+#container{
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+#container #topcont{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(248, 203, 88);
+}
+#topcont .dets{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+    height: 100%;
+    /* background-color: red; */
+}
+.dets .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    color: goldenrod;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #fff;
+}
+.dets h2{
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#container #bottomcont{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: 15px;
+    /* background-color: red; */
+}
+#bottomcont #bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: gold;
+    color: #fff;
+    cursor: pointer;
+}
+
+#bottomcont #endGame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+}
+#bottomcont #scorePr{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: capitalize;
+}
+
+@media(max-width:500px){
+    #main{
+        width: 100%;
+        min-height: 10vh;
+    }
+    #main>h1{
+        font-size: 25px;
+    }
+    #container{
+        width: 80%;
+        height: 80%;
+        margin-top: 20px;
+    }
+    #container #topcont{
+        padding: 0px 5px;
+    }
+    #container #topcont .dets{
+        width: 100px;
+    }
+    #container #topcont .dets h2{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    #container #topcont .dets .box{
+        font-size: 12px;
+    }
+    #bottomcont #bubble{
+        width: 40px;
+        height: 40px;
+    }
+}
